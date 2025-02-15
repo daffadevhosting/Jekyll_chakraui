@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <script defer src="/assets/js/bundle.js"></script>
+</head>
+<body>
+    {% include navbar.html %}
+    
+    <main>
+        <div id="chakra-root"></div>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+</body>
+</html>
